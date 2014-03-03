@@ -1,0 +1,15 @@
+project_identifier: cordova    
+api_key: ____APIKEY_____
+base_path: /home/ldeluca/git     #working copy path. point to local fork of apache cordova repos
+
+files:
+  -
+    source: "/cordova-docs/docs/en/edge/**/*.md"
+    translation: "/cordova-docs/docs/%two_letters_code%/edge/**/%original_file_name%"
+    ignore:
+      - /.git
+  -
+    source: "/**/doc/*.md"
+    translation: "/**/doc/%two_letters_code%/%original_file_name%"
+    ignore: 
+      - /.git
